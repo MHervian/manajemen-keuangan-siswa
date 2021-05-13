@@ -72,13 +72,25 @@
             <span>Dashboard</span></a
           >
         </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="pengaturan.html">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Pengaturan Profil dan Akademik</span></a
+          >
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="billing.html">
+            <i class="fas fa-file-invoice"></i>
+            <span>Pembayaran</span></a
+          >
+        </li>
 
         <!-- Divider -->
         <hr class="sidebar-divider" />
 
         <!-- Manajemen SPP area -->
         <div class="sidebar-heading">
-          Manajemen Keuangan
+          Manajemen SD
         </div>
         <li class="nav-item">
           <a class="nav-link" href="#">
@@ -94,20 +106,20 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Penerimaan Hari Ini</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Penerimaan Bulan Ini</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
             <i class="fas fa-cog"></i>
             <span>Variabel Pembayaran</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="siswa.html">
+            <i class="fas fa-cog"></i>
+            <span>Data Siswa</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mutasi.html">
+            <i class="fas fa-cog"></i>
+            <span>Mutasi Kelas</span>
           </a>
         </li>
 
@@ -116,33 +128,39 @@
 
         <!-- Manajemen Siswa Area -->
         <div class="sidebar-heading">
-          Manajemen Siswa
+          Manajemen SMP
         </div>
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-          <a class="nav-link collapsed" href="siswa.html">
+          <a class="nav-link" href="#">
             <i class="fas fa-fw fa-table"></i>
+            <span>Laporan Tunggakan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Laporan Penerimaan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fas fa-cog"></i>
+            <span>Variabel Pembayaran</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="siswa.html">
+            <i class="fas fa-cog"></i>
             <span>Data Siswa</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="kelas.html">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Data Kelas</span></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="mutasi_kelas.html">
-            <i class="fas fa-chalkboard-teacher"></i>
-            <span>Mutasi Kelas</span></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pengaturan.html">
+          <a class="nav-link" href="mutasi.html">
             <i class="fas fa-cog"></i>
-            <span>Pengaturan Profil dan Akademik</span></a
-          >
+            <span>Mutasi Kelas</span>
+          </a>
         </li>
 
         <!-- Divider -->
@@ -201,7 +219,7 @@
                 >
                   <a
                     class="dropdown-item"
-                    href="../login.html"
+                    href="../index.html"
                     data-toggle="modal"
                     data-target="#logoutModal"
                   >
@@ -231,29 +249,25 @@
             <div class="row">
               <div class="col-xl-12 col-lg-12">
                 <div class="card shadow mb-4">
-                  <!-- <div class="card-header py-3 d-flex align-items-center">
-                    <h6 class="m-0 font-weight-bold text-primary">
-                      Profil Sekolah SD
-                    </h6>
-                  </div> -->
                   <div class="card-body">
                     <div class="row">
                       <div class="col-xl-5 col-lg-5">
                         <p>Pilih siswa yang dipetakan</p>
                         <div class="form-group">
-                          <label>Pilih angkatan siswa</label>
+                          <label>Pilih Kelas</label>
                           <select class="form-control">
-                            <option>Kelas 1</option>
-                            <option>Kelas 2</option>
-                            <option>Kelas 3</option>
-                            <option>Kelas 4</option>
-                            <option>Kelas 5</option>
-                            <option>Kelas 6</option>
+                            <option>1-A</option>
+                            <option>1-B</option>
+                            <option>1-C</option>
+                            <option>1-D</option>
+                            <option>1-E</option>
+                            <option>1-F</option>
+                            <option>2-A</option>
                           </select>
                         </div>
 
                         <div class="form-group mt-4">
-                          <label>Cari Siswa/Siswi</label>
+                          <label>Cari NIP Siswa/Siswi</label>
                           <div class="d-flex">
                             <input type="text" class="form-control" />
                             <button type="submit" class="btn btn-primary">
@@ -271,54 +285,72 @@
                             border-radius: 5px;
                           "
                         >
-                          <table class="table">
+                          <table class="table table-striped">
                             <tr>
-                              <td><input type="checkbox" /></td>
-                              <td>Harahman</td>
+                              <th></th>
+                              <th>Nama Siswa</th>
+                              <th>NIP</th>
                             </tr>
                             <tr>
                               <td><input type="checkbox" /></td>
-                              <td>Sonia</td>
+                              <td>Harahman</td>
+                              <td>23927</td>
+                            </tr>
+                            <tr>
+                              <td><input type="checkbox" /></td>
+                              <td>Sonya</td>
+                              <td>920392</td>
                             </tr>
                             <tr>
                               <td><input type="checkbox" /></td>
                               <td>Ratrika</td>
+                              <td>823492</td>
                             </tr>
                             <tr>
                               <td><input type="checkbox" /></td>
                               <td>Atikah</td>
+                              <td>23728</td>
                             </tr>
                             <tr>
                               <td><input type="checkbox" /></td>
                               <td>Saraswati</td>
+                              <td>04393</td>
                             </tr>
                             <tr>
                               <td><input type="checkbox" /></td>
                               <td>Sudirman</td>
+                              <td>349384</td>
                             </tr>
                             <tr>
                               <td><input type="checkbox" /></td>
                               <td>Agung</td>
+                              <td>349384</td>
                             </tr>
                             <tr>
                               <td><input type="checkbox" /></td>
                               <td>Asaba</td>
+                              <td>9382</td>
                             </tr>
                             <tr>
                               <td><input type="checkbox" /></td>
                               <td>Noval</td>
+                              <td>349389</td>
                             </tr>
                           </table>
                         </div>
                       </div>
 
                       <div class="col-xl-2 col-lg-2 pl-5 pr-5 pt-5">
-                        <button class="btn btn-primary d-block w-100">
-                          &rightarrow;
-                        </button>
-                        <button class="btn btn-primary d-block w-100 mt-4">
-                          &leftarrow;
-                        </button>
+                        <div
+                          class="d-flex flex-column justify-content-center flex-wrap"
+                        >
+                          <button class="btn btn-primary">
+                            &rightarrow;
+                          </button>
+                          <button class="btn btn-primary mt-4">
+                            &leftarrow;
+                          </button>
+                        </div>
                       </div>
 
                       <div class="col-xl-5 col-lg-5">
@@ -337,6 +369,15 @@
                             <option>2-C</option>
                           </select>
                         </div>
+                        <div class="form-group mt-4">
+                          <label>Cari NIP Siswa/Siswi</label>
+                          <div class="d-flex">
+                            <input type="text" class="form-control" />
+                            <button type="submit" class="btn btn-primary">
+                              Cari
+                            </button>
+                          </div>
+                        </div>
 
                         <div
                           class="d-block"
@@ -347,18 +388,26 @@
                             border-radius: 5px;
                           "
                         >
-                          <table class="table">
+                          <table class="table table-striped">
+                            <tr>
+                              <th></th>
+                              <th>Nama Siswa</th>
+                              <th>NIP</th>
+                            </tr>
                             <tr>
                               <td><input type="checkbox" /></td>
                               <td>Anda</td>
+                              <td>349384</td>
                             </tr>
                             <tr>
                               <td><input type="checkbox" /></td>
                               <td>Mulyo</td>
+                              <td>38329</td>
                             </tr>
                             <tr>
                               <td><input type="checkbox" /></td>
                               <td>Rahman</td>
+                              <td>34983</td>
                             </tr>
                           </table>
                         </div>
@@ -425,7 +474,7 @@
             >
               Cancel
             </button>
-            <a class="btn btn-primary" href="../login.html">Logout</a>
+            <a class="btn btn-primary" href="../index.html">Logout</a>
           </div>
         </div>
       </div>

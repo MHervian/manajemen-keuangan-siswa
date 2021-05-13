@@ -10,11 +10,13 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Data Siswa - Aplikasi Keuangan Siswa</title>
+    <title>
+      Data Siswa - Aplikasi Keuangan Siswa & Perencanaan Anggaran Sekolah
+    </title>
 
     <!-- Custom fonts for this template-->
     <link
-      href="vendor/fontawesome-free/css/all.min.css"
+      href="../vendor/fontawesome-free/css/all.min.css"
       rel="stylesheet"
       type="text/css"
     />
@@ -24,7 +26,7 @@
     />
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet" />
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet" />
   </head>
 
   <body id="page-top">
@@ -38,12 +40,17 @@
         <!-- Sidebar - Brand -->
         <a
           class="sidebar-brand d-flex align-items-center justify-content-center"
-          href="index.html"
+          href="../program.html"
         >
           <!-- <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-laugh-wink"></i>
           </div> -->
-          <div class="sidebar-brand-text mx-3">Admin Sistem</div>
+          <div class="sidebar-brand-text mx-3">
+            Admin Sistem
+            <span style="display: block; font-size: 10px; opacity: 0.55;"
+              >Keuangan Siswa</span
+            >
+          </div>
         </a>
 
         <!-- Divider -->
@@ -51,9 +58,30 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">
+          <a class="nav-link" href="../program.html">
+            <i class="fas fa-home"></i>
+            <span>Homepage</span></a
+          >
+        </li>
+
+        <hr class="sidebar-divider" />
+
+        <li class="nav-item active">
+          <a class="nav-link" href="dashboard.html">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a
+          >
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="pengaturan.html">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Pengaturan Profil dan Akademik</span></a
+          >
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="billing.html">
+            <i class="fas fa-file-invoice"></i>
+            <span>Pembayaran</span></a
           >
         </li>
 
@@ -62,12 +90,36 @@
 
         <!-- Manajemen SPP area -->
         <div class="sidebar-heading">
-          Manajemen SPP
+          Manajemen SD
         </div>
         <li class="nav-item">
           <a class="nav-link" href="#">
             <i class="fas fa-fw fa-table"></i>
-            <span>Data SPP</span>
+            <span>Laporan Tunggakan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Laporan Penerimaan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fas fa-cog"></i>
+            <span>Variabel Pembayaran</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="siswa.html">
+            <i class="fas fa-cog"></i>
+            <span>Data Siswa</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mutasi.html">
+            <i class="fas fa-cog"></i>
+            <span>Mutasi Kelas</span>
           </a>
         </li>
 
@@ -76,21 +128,39 @@
 
         <!-- Manajemen Siswa Area -->
         <div class="sidebar-heading">
-          Manajemen Siswa
+          Manajemen SMP
         </div>
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-          <a class="nav-link collapsed" href="siswa.html">
+          <a class="nav-link" href="#">
             <i class="fas fa-fw fa-table"></i>
+            <span>Laporan Tunggakan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Laporan Penerimaan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fas fa-cog"></i>
+            <span>Variabel Pembayaran</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="siswa.html">
+            <i class="fas fa-cog"></i>
             <span>Data Siswa</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="kelas.html">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Data Kelas</span></a
-          >
+          <a class="nav-link" href="mutasi.html">
+            <i class="fas fa-cog"></i>
+            <span>Mutasi Kelas</span>
+          </a>
         </li>
 
         <!-- Divider -->
@@ -139,7 +209,7 @@
                   >
                   <img
                     class="img-profile rounded-circle"
-                    src="img/undraw_profile.svg"
+                    src="../img/undraw_profile.svg"
                   />
                 </a>
                 <!-- Dropdown - User Information -->
@@ -149,7 +219,7 @@
                 >
                   <a
                     class="dropdown-item"
-                    href="login.html"
+                    href="../index.html"
                     data-toggle="modal"
                     data-target="#logoutModal"
                   >
@@ -170,122 +240,170 @@
             <div
               class="d-sm-flex align-items-center justify-content-between mb-4"
             >
-              <h1 class="h3 mb-0 text-gray-800">Data Siswa</h1>
-              <!-- <a
-                href="#"
-                class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"
-                ><i class="fas fa-download fa-sm text-white-50"></i> Generate
-                Report</a
-              > -->
+              <h1 class="h3 mb-0 text-gray-800">Siswa</h1>
             </div>
 
             <!-- Content Row -->
             <div class="row">
               <div class="col-xl-12 col-lg-12">
-                <div class="card shadow mb-4">
-                  <!-- Card Header - Dropdown -->
-                  <div class="card-header py-3 d-flex align-items-center">
+                <div class="bg-white shadow rounded p-3 mb-4">
+                  <div class="mb-4">
                     <a href="#" class="btn btn-primary btn-sm"
-                      ><i class="fas fa-plus-circle"></i> Input Data Siswa</a
+                      ><i class="fas fa-plus-square"></i> Input Data Siswa</a
                     >
-                    <a href="#" class="btn btn-success btn-sm ml-3"
+                    <a href="#" class="btn btn-success btn-sm"
                       ><i class="fas fa-file-excel"></i> Import Data Siswa</a
                     >
-                    <a href="#" class="btn btn-primary btn-sm ml-3"
-                      ><i class="fas fa-file-download"></i> Ekspor Data Siswa</a
-                    >
                   </div>
-                  <!-- Card Body -->
-                  <div class="card-body">
-                    <table class="table table-striped">
-                      <tr>
-                        <th>No.</th>
-                        <th>Nama Siswa</th>
-                        <th>Kelas</th>
-                        <th>Aksi</th>
-                      </tr>
-                      <tr>
-                        <td>1.</td>
-                        <td>Arma</td>
-                        <td>1B</td>
-                        <td>
-                          <a href="#"
-                            ><i class="fas fa-info"></i> Detail Siswa</a
-                          >
-                          <a href="#" class="ml-2"
-                            ><i class="fas fa-cog"></i> Perbaharui</a
-                          >
-                          <a href="#" class="ml-2"
-                            ><i class="fas fa-trash-alt"></i> Hapus</a
-                          >
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>2.</td>
-                        <td>Achmad</td>
-                        <td>1C</td>
-                        <td>
-                          <a href="#"
-                            ><i class="fas fa-info"></i> Detail Siswa</a
-                          >
-                          <a href="#" class="ml-2"
-                            ><i class="fas fa-cog"></i> Perbaharui</a
-                          >
-                          <a href="#" class="ml-2"
-                            ><i class="fas fa-trash-alt"></i> Hapus</a
-                          >
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>3.</td>
-                        <td>Dina</td>
-                        <td>1A</td>
-                        <td>
-                          <a href="#"
-                            ><i class="fas fa-info"></i> Detail Siswa</a
-                          >
-                          <a href="#" class="ml-2"
-                            ><i class="fas fa-cog"></i> Perbaharui</a
-                          >
-                          <a href="#" class="ml-2"
-                            ><i class="fas fa-trash-alt"></i> Hapus</a
-                          >
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>4.</td>
-                        <td>Saraswati</td>
-                        <td>1A</td>
-                        <td>
-                          <a href="#"
-                            ><i class="fas fa-info"></i> Detail Siswa</a
-                          >
-                          <a href="#" class="ml-2"
-                            ><i class="fas fa-cog"></i> Perbaharui</a
-                          >
-                          <a href="#" class="ml-2"
-                            ><i class="fas fa-trash-alt"></i> Hapus</a
-                          >
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>5.</td>
-                        <td>Ira</td>
-                        <td>1B</td>
-                        <td>
-                          <a href="#"
-                            ><i class="fas fa-info"></i> Detail Siswa</a
-                          >
-                          <a href="#" class="ml-2"
-                            ><i class="fas fa-cog"></i> Perbaharui</a
-                          >
-                          <a href="#" class="ml-2"
-                            ><i class="fas fa-trash-alt"></i> Hapus</a
-                          >
-                        </td>
-                      </tr>
-                    </table>
+                  <div class="mb-3 border rounded p-2">
+                    <p class="mb-1">Filter pencarian siswa</p>
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <label for="namaSiswa">Nama Siswa</label>
+                        <input
+                          type="text"
+                          id="namaSiswa"
+                          class="form-control ml-2"
+                        />
+                      </div>
+                      <div class="form-group ml-3">
+                        <label for="kelas">Kelas</label>
+                        <select id="kelas" class="form-control ml-2">
+                          <option>-</option>
+                          <option>1A</option>
+                          <option>1B</option>
+                          <option>1C</option>
+                          <option>1D</option>
+                          <option>1E</option>
+                          <option>1F</option>
+                          <option>1G</option>
+                        </select>
+                      </div>
+                      <div class="form-group ml-3">
+                        <button type="submit" class="btn btn-primary">
+                          <i class="fas fa-search"></i>
+                        </button>
+                      </div>
+                    </form>
                   </div>
+                  <table class="table table-striped">
+                    <tr>
+                      <th>No.</th>
+                      <th>NIP</th>
+                      <th>Nama</th>
+                      <th>Kelas</th>
+                      <th>Status Siswa</th>
+                      <th>Aksi</th>
+                    </tr>
+                    <tr>
+                      <td>1.</td>
+                      <td>92384</td>
+                      <td>Arhamn</td>
+                      <td>1A</td>
+                      <td class="text-success">Aktif</td>
+                      <td>
+                        <a href="#"
+                          ><i class="fas fa-info-circle"></i> Detail</a
+                        >
+                        <a href="#" class="ml-2"
+                          ><i class="fas fa-cog"></i> Ubah</a
+                        >
+                        <a href="#" class="ml-2"
+                          ><i class="fas fa-trash"></i> Hapus</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2.</td>
+                      <td>92384</td>
+                      <td>Arhamn</td>
+                      <td>1A</td>
+                      <td class="text-success">Aktif</td>
+                      <td>
+                        <a href="#"
+                          ><i class="fas fa-info-circle"></i> Detail</a
+                        >
+                        <a href="#" class="ml-2"
+                          ><i class="fas fa-cog"></i> Ubah</a
+                        >
+                        <a href="#" class="ml-2"
+                          ><i class="fas fa-trash"></i> Hapus</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3.</td>
+                      <td>92384</td>
+                      <td>Arhamn</td>
+                      <td>1A</td>
+                      <td class="text-success">Aktif</td>
+                      <td>
+                        <a href="#"
+                          ><i class="fas fa-info-circle"></i> Detail</a
+                        >
+                        <a href="#" class="ml-2"
+                          ><i class="fas fa-cog"></i> Ubah</a
+                        >
+                        <a href="#" class="ml-2"
+                          ><i class="fas fa-trash"></i> Hapus</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>4.</td>
+                      <td>92384</td>
+                      <td>Arhamn</td>
+                      <td>1A</td>
+                      <td class="text-success">Aktif</td>
+                      <td>
+                        <a href="#"
+                          ><i class="fas fa-info-circle"></i> Detail</a
+                        >
+                        <a href="#" class="ml-2"
+                          ><i class="fas fa-cog"></i> Ubah</a
+                        >
+                        <a href="#" class="ml-2"
+                          ><i class="fas fa-trash"></i> Hapus</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>5.</td>
+                      <td>92384</td>
+                      <td>Arhamn</td>
+                      <td>1A</td>
+                      <td class="text-danger">Tidak Aktif</td>
+                      <td>
+                        <a href="#"
+                          ><i class="fas fa-info-circle"></i> Detail</a
+                        >
+                        <a href="#" class="ml-2"
+                          ><i class="fas fa-cog"></i> Ubah</a
+                        >
+                        <a href="#" class="ml-2"
+                          ><i class="fas fa-trash"></i> Hapus</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>6.</td>
+                      <td>92384</td>
+                      <td>Arhamn</td>
+                      <td>1A</td>
+                      <td class="text-success">Aktif</td>
+                      <td>
+                        <a href="#"
+                          ><i class="fas fa-info-circle"></i> Detail</a
+                        >
+                        <a href="#" class="ml-2"
+                          ><i class="fas fa-cog"></i> Ubah</a
+                        >
+                        <a href="#" class="ml-2"
+                          ><i class="fas fa-trash"></i> Hapus</a
+                        >
+                      </td>
+                    </tr>
+                  </table>
                 </div>
               </div>
             </div>
@@ -346,20 +464,27 @@
             >
               Cancel
             </button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
+            <a class="btn btn-primary" href="../index.html">Logout</a>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="../js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="../vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="../js/demo/chart-area-demo.js"></script>
+    <script src="../js/demo/chart-pie-demo.js"></script>
   </body>
 </html>
