@@ -73,13 +73,25 @@
             <span>Dashboard</span></a
           >
         </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="pengaturan.html">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Pengaturan Profil dan Akademik</span></a
+          >
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="billing.html">
+            <i class="fas fa-file-invoice"></i>
+            <span>Pembayaran</span></a
+          >
+        </li>
 
         <!-- Divider -->
         <hr class="sidebar-divider" />
 
         <!-- Manajemen SPP area -->
         <div class="sidebar-heading">
-          Manajemen Keuangan
+          Manajemen SD
         </div>
         <li class="nav-item">
           <a class="nav-link" href="#">
@@ -95,20 +107,20 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Penerimaan Hari Ini</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Penerimaan Bulan Ini</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
             <i class="fas fa-cog"></i>
             <span>Variabel Pembayaran</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="siswa.html">
+            <i class="fas fa-cog"></i>
+            <span>Data Siswa</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mutasi.html">
+            <i class="fas fa-cog"></i>
+            <span>Mutasi Kelas</span>
           </a>
         </li>
 
@@ -117,33 +129,39 @@
 
         <!-- Manajemen Siswa Area -->
         <div class="sidebar-heading">
-          Manajemen Siswa
+          Manajemen SMP
         </div>
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-          <a class="nav-link collapsed" href="siswa.html">
+          <a class="nav-link" href="#">
             <i class="fas fa-fw fa-table"></i>
+            <span>Laporan Tunggakan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Laporan Penerimaan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fas fa-cog"></i>
+            <span>Variabel Pembayaran</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="siswa.html">
+            <i class="fas fa-cog"></i>
             <span>Data Siswa</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="kelas.html">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Data Kelas</span></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="mutasi_kelas.html">
-            <i class="fas fa-chalkboard-teacher"></i>
-            <span>Mutasi Kelas</span></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pengaturan.html">
+          <a class="nav-link" href="mutasi.html">
             <i class="fas fa-cog"></i>
-            <span>Pengaturan Profil dan Akademik</span></a
-          >
+            <span>Mutasi Kelas</span>
+          </a>
         </li>
 
         <!-- Divider -->
@@ -202,7 +220,7 @@
                 >
                   <a
                     class="dropdown-item"
-                    href="../login.html"
+                    href="../index.html"
                     data-toggle="modal"
                     data-target="#logoutModal"
                   >
@@ -336,91 +354,66 @@
                   </div>
                 </div>
               </div>
-
-              <!-- Total jumlah SPP yang kurang -->
-              <div class="col-xl-4 col-md-4 mb-4">
-                <div class="card border-left-warning shadow h-100 py-2">
-                  <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                      <div class="col mr-2">
-                        <div
-                          class="text-xs font-weight-bold text-warning text-uppercase mb-1"
-                        >
-                          Total Jumlah SPP Yang Kurang
-                        </div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">
-                          Rp.12.600.000,00
-                        </div>
-                      </div>
-                      <div class="col-auto">
-                        <i
-                          class="fas fa-clipboard-list fa-2x text-gray-300"
-                        ></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
 
             <!-- Content Row -->
 
             <div class="row">
-              <div class="col-xl-8 col-lg-7">
+              <div class="col-xl-9 col-lg-9">
                 <div class="card shadow mb-4">
                   <!-- Card Header - Dropdown -->
                   <div class="card-header py-3 d-flex align-items-center">
                     <h6 class="m-0 font-weight-bold text-primary">
-                      Data SPP Siswa
+                      Data Tunggakan Siswa SD
                     </h6>
                     <a href="#" class="btn btn-primary btn-sm ml-3"
-                      >Lihat Semua Data</a
+                      >Lihat Semua Tunggakan</a
                     >
                   </div>
                   <!-- Card Body -->
                   <div class="card-body">
                     <table class="table table-striped">
                       <tr>
-                        <th>No.</th>
                         <th>Nama Siswa</th>
-                        <th>Total SPP</th>
-                        <th>Total SPP Terbayar</th>
-                        <th>Sisa SPP</th>
+                        <th>No Induk</th>
+                        <th>Total Tunggakan</th>
+                        <th>Total Terbayar</th>
+                        <th>Status Tunggakan</th>
                       </tr>
                       <tr>
-                        <td>1.</td>
                         <td>Arma</td>
+                        <td>8239247</td>
+                        <td>Rp.500.000,00</td>
                         <td>Rp.2.000.000,00</td>
-                        <td>Rp.1.200.000,00</td>
-                        <td>Rp.800.000,00</td>
+                        <td class="text-danger">Belum Lunas</td>
                       </tr>
                       <tr>
-                        <td>2.</td>
-                        <td>Arma</td>
-                        <td>Rp.2.000.000,00</td>
-                        <td>Rp.1.200.000,00</td>
-                        <td>Rp.800.000,00</td>
+                        <td>Fahim</td>
+                        <td>1187362</td>
+                        <td>Rp.400.000,00</td>
+                        <td>Rp.2.100.000,00</td>
+                        <td class="text-danger">Belum Lunas</td>
                       </tr>
                       <tr>
-                        <td>3.</td>
-                        <td>Arma</td>
-                        <td>Rp.2.000.000,00</td>
-                        <td>Rp.1.200.000,00</td>
-                        <td>Rp.800.000,00</td>
+                        <td>Isha</td>
+                        <td>5721947</td>
+                        <td>Rp.0</td>
+                        <td>Rp.2.500.000,00</td>
+                        <td class="text-success">Lunas</td>
                       </tr>
                       <tr>
-                        <td>4.</td>
-                        <td>Arma</td>
-                        <td>Rp.2.000.000,00</td>
-                        <td>Rp.1.200.000,00</td>
-                        <td>Rp.800.000,00</td>
+                        <td>Rohman</td>
+                        <td>0934787</td>
+                        <td>Rp.0</td>
+                        <td>Rp.2.500.000,00</td>
+                        <td class="text-success">Lunas</td>
                       </tr>
                       <tr>
-                        <td>5.</td>
-                        <td>Arma</td>
-                        <td>Rp.2.000.000,00</td>
-                        <td>Rp.1.200.000,00</td>
-                        <td>Rp.800.000,00</td>
+                        <td>Udin</td>
+                        <td>8203874</td>
+                        <td>Rp.900.000,00</td>
+                        <td>Rp.1.600.000,00</td>
+                        <td class="text-danger">Belum Lunas</td>
                       </tr>
                     </table>
                   </div>
@@ -428,14 +421,14 @@
               </div>
 
               <!-- Pie Chart -->
-              <div class="col-xl-4 col-lg-5">
+              <div class="col-xl-3 col-lg-3">
                 <div class="card shadow mb-4">
                   <!-- Card Header - Dropdown -->
                   <div
                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
                   >
                     <h6 class="m-0 font-weight-bold text-primary">
-                      Grafik Keuangan SPP
+                      Grafik Keuangan
                     </h6>
                   </div>
                   <!-- Card Body -->
@@ -445,13 +438,10 @@
                     </div>
                     <div class="mt-4 text-center small">
                       <span class="mr-2">
-                        <i class="fas fa-circle text-primary"></i> Direct
+                        <i class="fas fa-circle text-primary"></i> Penerimaan
                       </span>
                       <span class="mr-2">
-                        <i class="fas fa-circle text-success"></i> Social
-                      </span>
-                      <span class="mr-2">
-                        <i class="fas fa-circle text-info"></i> Referral
+                        <i class="fas fa-circle text-success"></i> Tunggakan
                       </span>
                     </div>
                   </div>
@@ -461,99 +451,91 @@
 
             <!-- Content Row -->
             <div class="row">
-              <!-- Content Column -->
-              <div class="col-lg-6 mb-4">
-                <!-- Project Card Example -->
+              <div class="col-xl-9 col-lg-9">
                 <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
                   <div class="card-header py-3 d-flex align-items-center">
                     <h6 class="m-0 font-weight-bold text-primary">
-                      Data Siswa
+                      Data Tunggakan Siswa SMP
                     </h6>
                     <a href="#" class="btn btn-primary btn-sm ml-3"
-                      >Lihat Semua Data</a
+                      >Lihat Semua Tunggakan</a
                     >
                   </div>
+                  <!-- Card Body -->
                   <div class="card-body">
                     <table class="table table-striped">
                       <tr>
-                        <th>No.</th>
                         <th>Nama Siswa</th>
-                        <th>Kelas</th>
+                        <th>No Induk</th>
+                        <th>Total Tunggakan</th>
+                        <th>Total Terbayar</th>
+                        <th>Status Tunggakan</th>
                       </tr>
                       <tr>
-                        <td>1.</td>
-                        <td>Arma</td>
-                        <td>1B</td>
+                        <td>Ana</td>
+                        <td>8239247</td>
+                        <td>Rp.500.000,00</td>
+                        <td>Rp.3.300.000,00</td>
+                        <td class="text-danger">Belum Lunas</td>
                       </tr>
                       <tr>
-                        <td>2.</td>
+                        <td>Mikel</td>
+                        <td>1187362</td>
+                        <td>Rp.400.000,00</td>
+                        <td>Rp.3.400.000,00</td>
+                        <td class="text-danger">Belum Lunas</td>
+                      </tr>
+                      <tr>
+                        <td>Yosua</td>
+                        <td>5721947</td>
+                        <td>Rp.0</td>
+                        <td>Rp.3.800.000,00</td>
+                        <td class="text-success">Lunas</td>
+                      </tr>
+                      <tr>
                         <td>Achmad</td>
-                        <td>1C</td>
+                        <td>0934787</td>
+                        <td>Rp.0</td>
+                        <td>Rp.3.800.000,00</td>
+                        <td class="text-success">Lunas</td>
                       </tr>
                       <tr>
-                        <td>3.</td>
-                        <td>Dina</td>
-                        <td>1A</td>
-                      </tr>
-                      <tr>
-                        <td>4.</td>
-                        <td>Saraswati</td>
-                        <td>1A</td>
-                      </tr>
-                      <tr>
-                        <td>5.</td>
-                        <td>Ira</td>
-                        <td>1B</td>
+                        <td>Fajri</td>
+                        <td>8203874</td>
+                        <td>Rp.1.200.000,00</td>
+                        <td>Rp.2.600.000,00</td>
+                        <td class="text-danger">Belum Lunas</td>
                       </tr>
                     </table>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-6 mb-4">
-                <!-- Approach -->
+              <!-- Pie Chart -->
+              <div class="col-xl-3 col-lg-3">
                 <div class="card shadow mb-4">
-                  <div class="card-header py-3 d-flex align-items-center">
+                  <!-- Card Header - Dropdown -->
+                  <div
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                  >
                     <h6 class="m-0 font-weight-bold text-primary">
-                      Data Kelas
+                      Grafik Keuangan
                     </h6>
-                    <a href="#" class="btn btn-primary btn-sm ml-3"
-                      >Lihat Semua Data</a
-                    >
                   </div>
+                  <!-- Card Body -->
                   <div class="card-body">
-                    <table class="table table-striped">
-                      <tr>
-                        <th>No.</th>
-                        <th>Kelas</th>
-                        <th>Jumlah Siswa</th>
-                      </tr>
-                      <tr>
-                        <td>1.</td>
-                        <td>1A</td>
-                        <td>16</td>
-                      </tr>
-                      <tr>
-                        <td>2.</td>
-                        <td>1B</td>
-                        <td>13</td>
-                      </tr>
-                      <tr>
-                        <td>3.</td>
-                        <td>1C</td>
-                        <td>11</td>
-                      </tr>
-                      <tr>
-                        <td>4.</td>
-                        <td>1D</td>
-                        <td>13</td>
-                      </tr>
-                      <tr>
-                        <td>5.</td>
-                        <td>1E</td>
-                        <td>15</td>
-                      </tr>
-                    </table>
+                    <div class="chart-pie pt-4 pb-2">
+                      <canvas id="myPieChart2"></canvas>
+                    </div>
+                    <div class="mt-4 text-center small">
+                      <span class="mr-2">
+                        <i class="fas fa-circle text-primary"></i> Penerimaan
+                      </span>
+                      <span class="mr-2">
+                        <i class="fas fa-circle text-success"></i> Tunggakan
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -615,7 +597,7 @@
             >
               Cancel
             </button>
-            <a class="btn btn-primary" href="../login.html">Logout</a>
+            <a class="btn btn-primary" href="../index.html">Logout</a>
           </div>
         </div>
       </div>
