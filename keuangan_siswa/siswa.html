@@ -93,7 +93,7 @@
           Manajemen SD
         </div>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="tunggakan.html">
             <i class="fas fa-fw fa-table"></i>
             <span>Laporan Tunggakan</span>
           </a>
@@ -133,7 +133,7 @@
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="tunggakan.html">
             <i class="fas fa-fw fa-table"></i>
             <span>Laporan Tunggakan</span>
           </a>
@@ -240,7 +240,7 @@
             <div
               class="d-sm-flex align-items-center justify-content-between mb-4"
             >
-              <h1 class="h3 mb-0 text-gray-800">Siswa</h1>
+              <h1 class="h3 mb-0 text-gray-800">Data Siswa</h1>
             </div>
 
             <!-- Content Row -->
@@ -248,21 +248,36 @@
               <div class="col-xl-12 col-lg-12">
                 <div class="bg-white shadow rounded p-3 mb-4">
                   <div class="mb-4">
-                    <a href="#" class="btn btn-primary btn-sm"
+                    <a
+                      href="#"
+                      class="btn btn-primary btn-sm"
+                      data-toggle="modal"
+                      data-target="#formSiswaModal"
+                      data-backdrop="static"
+                      data-keyboard="false"
                       ><i class="fas fa-plus-square"></i> Input Data Siswa</a
                     >
-                    <a href="#" class="btn btn-success btn-sm"
+                    <a
+                      href="#"
+                      class="btn btn-success btn-sm"
+                      data-toggle="modal"
+                      data-target="#formImportSiswaModal"
+                      data-backdrop="static"
+                      data-keyboard="false"
                       ><i class="fas fa-file-excel"></i> Import Data Siswa</a
+                    >
+                    <a href="#" class="btn btn-secondary btn-sm"
+                      ><i class="fas fa-file-excel"></i> Ekspor Data Siswa</a
                     >
                   </div>
                   <div class="mb-3 border rounded p-2">
                     <p class="mb-1">Filter pencarian siswa</p>
                     <form class="form-inline">
                       <div class="form-group">
-                        <label for="namaSiswa">Nama Siswa</label>
+                        <label for="nipSiswa">NIP Siswa</label>
                         <input
                           type="text"
-                          id="namaSiswa"
+                          id="nipSiswa"
                           class="form-control ml-2"
                         />
                       </div>
@@ -281,11 +296,12 @@
                       </div>
                       <div class="form-group ml-3">
                         <button type="submit" class="btn btn-primary">
-                          <i class="fas fa-search"></i>
+                          Cari
                         </button>
                       </div>
                     </form>
                   </div>
+                  <p class="mb-2">Jumlah data: 6</p>
                   <table class="table table-striped">
                     <tr>
                       <th>No.</th>
@@ -302,13 +318,25 @@
                       <td>1A</td>
                       <td class="text-success">Aktif</td>
                       <td>
-                        <a href="#"
+                        <a href="detail_siswa.html"
                           ><i class="fas fa-info-circle"></i> Detail</a
                         >
-                        <a href="#" class="ml-2"
+                        <a
+                          href="#"
+                          class="ml-2"
+                          data-toggle="modal"
+                          data-target="#formUbahSiswaModal"
+                          data-backdrop="static"
+                          data-keyboard="false"
                           ><i class="fas fa-cog"></i> Ubah</a
                         >
-                        <a href="#" class="ml-2"
+                        <a
+                          href="#"
+                          class="ml-2"
+                          data-toggle="modal"
+                          data-target="#formHapusSiswaModal"
+                          data-backdrop="static"
+                          data-keyboard="false"
                           ><i class="fas fa-trash"></i> Hapus</a
                         >
                       </td>
@@ -323,7 +351,13 @@
                         <a href="#"
                           ><i class="fas fa-info-circle"></i> Detail</a
                         >
-                        <a href="#" class="ml-2"
+                        <a
+                          href="#"
+                          class="ml-2"
+                          data-toggle="modal"
+                          data-target="#formUbahSiswaModal"
+                          data-backdrop="static"
+                          data-keyboard="false"
                           ><i class="fas fa-cog"></i> Ubah</a
                         >
                         <a href="#" class="ml-2"
@@ -466,6 +500,222 @@
             </button>
             <a class="btn btn-primary" href="../index.html">Logout</a>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form Input Data Siswa Modal-->
+    <div
+      class="modal fade"
+      id="formSiswaModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalFormInputSiswa"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Form Input Data Siswa
+            </h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <form>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="fieldNamaSiswa">Nama Siswa</label>
+                <input type="text" id="fieldNamaSiswa" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="fieldKelas">Kelas</label>
+                <input type="text" id="fieldKelas" class="form-control" />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-secondary"
+                type="button"
+                data-dismiss="modal"
+              >
+                Batal Input
+              </button>
+              <button class="btn btn-primary" type="submit">Simpan Data</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form Import Data Siswa Modal-->
+    <div
+      class="modal fade"
+      id="formImportSiswaModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalFormImportSiswa"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Form Import Data Siswa
+            </h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <form>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="fieldImportSiswa"
+                  >Masukkan File Berformat .excel</label
+                >
+                <input type="file" id="fieldImportSiswa" class="form-control" />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-secondary"
+                type="button"
+                data-dismiss="modal"
+              >
+                Batal Import
+              </button>
+              <button class="btn btn-primary" type="submit">Import Data</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form Hapus Data Siswa Modal-->
+    <div
+      class="modal fade"
+      id="formHapusSiswaModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalFormHapusSiswa"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Form Import Data Siswa
+            </h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Tekan tombol 'hapus' untuk menghapus data siswa</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-dismiss="modal"
+            >
+              Batal
+            </button>
+            <button class="btn btn-danger" type="submit">Hapus</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form Ubah Data Siswa Modal-->
+    <div
+      class="modal fade"
+      id="formUbahSiswaModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalFormUbahSiswa"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Form Ubah Data Siswa
+            </h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <form>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="fieldUbahNamaSiswa">Nama Siswa</label>
+                <input
+                  type="text"
+                  id="fieldUbahNamaSiswa"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label>Status Aktif: </label>
+                <label
+                  ><input
+                    type="radio"
+                    name="radioStatus"
+                    id="fieldUbahStatusSiswa"
+                    class="ml-2"
+                  />
+                  Aktif</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="radioStatus"
+                    id="fieldUbahStatusSiswa"
+                    class="ml-2"
+                  />
+                  Tidak Aktif</label
+                >
+              </div>
+              <div class="form-group">
+                <label for="fieldUbahKeteranganStatus"
+                  >Keterangan Tidak Aktif</label
+                >
+                <textarea class="form-control"></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-secondary"
+                type="button"
+                data-dismiss="modal"
+              >
+                Batal Import
+              </button>
+              <button class="btn btn-primary" type="submit">Import Data</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
