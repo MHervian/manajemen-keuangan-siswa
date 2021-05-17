@@ -241,12 +241,12 @@
             <div
               class="d-sm-flex align-items-center justify-content-between mb-4"
             >
-              <h1 class="h3 mb-0 text-gray-800">Pembayaran</h1>
+              <h1 class="h3 mb-0 text-gray-800">Sistem Pembayaran</h1>
             </div>
 
             <!-- Content Row -->
             <div class="row">
-              <div class="col-xl-12 col-lg-12">
+              <div class="col-xl-10 col-lg-10">
                 <div class="card shadow mb-4">
                   <div class="card-header py-3 d-flex align-items-center">
                     <h6 class="m-0 font-weight-bold text-primary">
@@ -254,7 +254,120 @@
                     </h6>
                   </div>
                   <!-- Card Body -->
-                  <div class="card-body"></div>
+                  <div class="card-body">
+                    <div class="mb-5 w-50">
+                      <table class="table border">
+                        <tr>
+                          <td>Nama Siswa</td>
+                          <td>:</td>
+                          <td>Harrahman</td>
+                        </tr>
+                        <tr>
+                          <td>NIP Siswa</td>
+                          <td>:</td>
+                          <td>32983</td>
+                        </tr>
+                        <tr>
+                          <td>Kelas</td>
+                          <td>:</td>
+                          <td>2-A</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="mb-4 border rounded p-2">
+                      <p>Pilih variabel yang dibayar</p>
+                      <form class="form-inline">
+                        <div class="form-group">
+                          <label for="jenisVariabel">Nama Variabel</label>
+                          <select id="jenisVariabel" class="form-control ml-2">
+                            <option>Uang LKS</option>
+                            <option>Uang Gedung</option>
+                            <option>Uang Ujian UTS</option>
+                            <option>Uang Ujian UAS</option>
+                          </select>
+                        </div>
+                        <div class="form-group ml-3">
+                          <button type="submit" class="btn btn-primary">
+                            Tambah Ke Pembayaran
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="mb-4">
+                      <p>List Pembayaran</p>
+                      <form>
+                        <table class="table table-striped mb-3">
+                          <tr>
+                            <th>Variabel yang Dibayar</th>
+                            <th>Besar</th>
+                            <th>Angsuran</th>
+                            <th></th>
+                          </tr>
+                          <tr>
+                            <td>Uang LKS</td>
+                            <td>Rp. 25.000,00</td>
+                            <td>-</td>
+                            <td class="text-center">
+                              <a
+                                href="#"
+                                class="border border-danger py-1 px-2 bg-danger text-white font-weight-bold"
+                                ><i class="fas fa-times"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Uang Ujian UTS</td>
+                            <td>Rp. 125.000,00</td>
+                            <td>-</td>
+                            <td class="text-center">
+                              <a
+                                href="#"
+                                class="border border-danger py-1 px-2 bg-danger text-white font-weight-bold"
+                                ><i class="fas fa-times"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Uang Ujian UAS</td>
+                            <td>Rp. 125.000,00</td>
+                            <td>-</td>
+                            <td class="text-center">
+                              <a
+                                href="#"
+                                class="border border-danger py-1 px-2 bg-danger text-white font-weight-bold"
+                                ><i class="fas fa-times"></i
+                              ></a>
+                            </td>
+                          </tr>
+                        </table>
+                        <table class="table table-striped border w-50">
+                          <tr>
+                            <td>Jumlah dibayar</td>
+                            <td>:</td>
+                            <td><input type="text" class="form-control" /></td>
+                          </tr>
+                          <tr>
+                            <td>Sumber Dana</td>
+                            <td>:</td>
+                            <td>
+                              <select class="form-control">
+                                <option>Dana Bantuan Pemerintah</option>
+                                <option>Dana Siswa</option>
+                              </select>
+                            </td>
+                          </tr>
+                        </table>
+                        <div class="form-group">
+                          <button type="submit" class="btn btn-primary">
+                            Proses Pembayaran
+                          </button>
+                          <button type="reset" class="btn btn-secondary">
+                            Ulangi Pembayaran
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

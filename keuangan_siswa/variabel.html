@@ -367,7 +367,126 @@
                     </h6>
                   </div>
                   <!-- Card Body -->
-                  <div class="card-body"></div>
+                  <div class="card-body">
+                    <div class="row mb-4">
+                      <div class="col-xl-6 col-lg-6">
+                        <div class="form-group">
+                          <label>Pilih Jenis Variabel</label>
+                          <select class="form-control">
+                            <option>Insidentil</option>
+                            <option>Bulanan</option>
+                            <option>Angsuran</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group mt-4">
+                          <label>Cari Variabel Pembayaran</label>
+                          <div class="d-flex">
+                            <input type="text" class="form-control" />
+                            <button type="submit" class="btn btn-primary">
+                              Cari
+                            </button>
+                          </div>
+                        </div>
+
+                        <div
+                          class="d-block"
+                          style="
+                            height: 300px;
+                            overflow-y: scroll;
+                            border: 1px solid grey;
+                            border-radius: 5px;
+                          "
+                        >
+                          <table class="table table-striped">
+                            <tr>
+                              <th></th>
+                              <th>Nama Variabel</th>
+                              <th>Jenis Variabel</th>
+                            </tr>
+                            <tr>
+                              <td><input type="checkbox" /></td>
+                              <td>Uang LKS</td>
+                              <td class="text-danger font-weight-bold">Insidentil</td>
+                            </tr>
+                            <tr>
+                              <td><input type="checkbox" /></td>
+                              <td>Uang Ujian UTS</td>
+                              <td class="text-danger font-weight-bold">Insidentil</td>
+                            </tr>
+                            <tr>
+                              <td><input type="checkbox" /></td>
+                              <td>Uang Ujian UAS</td>
+                              <td class="text-danger font-weight-bold">Insidentil</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-6 col-lg-6">
+                        <div class="form-group">
+                          <label>Pilih Kelas</label>
+                          <select class="form-control">
+                            <option>1-A</option>
+                            <option>1-B</option>
+                            <option>1-C</option>
+                            <option>1-D</option>
+                            <option>1-E</option>
+                            <option>1-F</option>
+                            <option selected>2-A</option>
+                            <option>2-B</option>
+                            <option>2-C</option>
+                          </select>
+                        </div>
+                        <div class="form-group mt-4">
+                          <label>Cari NIP Siswa/Siswi</label>
+                          <div class="d-flex">
+                            <input type="text" class="form-control" />
+                            <button type="submit" class="btn btn-primary">
+                              Cari
+                            </button>
+                          </div>
+                        </div>
+
+                        <div
+                          class="d-block"
+                          style="
+                            height: 300px;
+                            overflow-y: scroll;
+                            border: 1px solid grey;
+                            border-radius: 5px;
+                          "
+                        >
+                          <table class="table table-striped">
+                            <tr>
+                              <th><input type="checkbox" /></th>
+                              <th>Nama Siswa</th>
+                              <th>Status</th>
+                            </tr>
+                            <tr>
+                              <td><input type="checkbox" /></td>
+                              <td>Anda</td>
+                              <td class="text-success"><i class="fa fa-check-circle"></i></td>
+                            </tr>
+                            <tr>
+                              <td><input type="checkbox" /></td>
+                              <td>Mulyo</td>
+                              <td class="text-danger"><i class="fa fa-times-circle"></i></td>
+                            </tr>
+                            <tr>
+                              <td><input type="checkbox" /></td>
+                              <td>Rahman</td>
+                              <td class="text-success"><i class="fa fa-check-circle"></i></td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <button class="btn btn-primary">Pasang ke Semua Data Tercentang</button>
+                      <button class="btn btn-primary">Pasang ke Semua Kelas</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
