@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>
+      Pengaturan Billing - Aplikasi Keuangan Siswa & Perencanaan Anggaran
+      Sekolah
+    </title>
+
+    <!-- Custom fonts for this template-->
+    <link
+      href="../vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template-->
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet" />
+  </head>
+
+  <body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <ul
+        class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
+        id="accordionSidebar"
+      >
+        <!-- Sidebar - Brand -->
+        <a
+          class="sidebar-brand d-flex align-items-center justify-content-center"
+          href="../program.html"
+        >
+          <div class="sidebar-brand-text mx-3">
+            Admin Sistem
+            <span style="display: block; font-size: 10px; opacity: 0.55;"
+              >Keuangan Siswa</span
+            >
+          </div>
+        </a>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0" />
+
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item active">
+          <a class="nav-link" href="../program.html">
+            <i class="fas fa-home"></i>
+            <span>Homepage</span></a
+          >
+        </li>
+
+        <hr class="sidebar-divider" />
+
+        <li class="nav-item active">
+          <a class="nav-link" href="dashboard.html">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span></a
+          >
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="pengaturan.html">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Pengaturan Profil dan Akademik</span></a
+          >
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+
+        <!-- Manajemen SPP area -->
+        <div class="sidebar-heading">
+          Manajemen SD
+        </div>
+        <li class="nav-item">
+          <a class="nav-link" href="tunggakan.html">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Laporan Tunggakan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="penerimaan.html">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Laporan Penerimaan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pengaturan_billing.html">
+            <i class="fas fa-coins"></i>
+            <span>Pengaturan Billing</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="siswa.html">
+            <i class="fas fa-cog"></i>
+            <span>Data Siswa</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mutasi.html">
+            <i class="fas fa-cog"></i>
+            <span>Mutasi Kelas</span>
+          </a>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+
+        <!-- Manajemen Siswa Area -->
+        <div class="sidebar-heading">
+          Manajemen SMP
+        </div>
+
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+          <a class="nav-link" href="tunggakan.html">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Laporan Tunggakan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="penerimaan.html">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Laporan Penerimaan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pengaturan_billing.html">
+            <i class="fas fa-coins"></i>
+            <span>Pengaturan Billing</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="siswa.html">
+            <i class="fas fa-cog"></i>
+            <span>Data Siswa</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mutasi.html">
+            <i class="fas fa-cog"></i>
+            <span>Mutasi Kelas</span>
+          </a>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider d-none d-md-block" />
+
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="text-center d-none d-md-inline">
+          <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+      </ul>
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav
+            class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow"
+          >
+            <!-- Sidebar Toggle (Topbar) -->
+            <button
+              id="sidebarToggleTop"
+              class="btn btn-link d-md-none rounded-circle mr-3"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Topbar Button -->
+            <div
+              class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"
+            >
+              <a href="transaksi.html" class="btn btn-primary btn-lg"
+                ><i class="fas fa-money-check-alt"></i> Transaksi Billing</a
+              >
+            </div>
+
+            <!-- Topbar Navbar -->
+            <ul class="navbar-nav ml-auto">
+              <div class="topbar-divider d-none d-sm-block"></div>
+
+              <!-- Nav Item - User Information -->
+              <li class="nav-item dropdown no-arrow">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="userDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="mr-2 d-none d-lg-inline text-gray-600 small"
+                    >Admin</span
+                  >
+                  <img
+                    class="img-profile rounded-circle"
+                    src="../img/undraw_profile.svg"
+                  />
+                </a>
+                <!-- Dropdown - User Information -->
+                <div
+                  class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                  aria-labelledby="userDropdown"
+                >
+                  <a
+                    class="dropdown-item"
+                    href="../index.html"
+                    data-toggle="modal"
+                    data-target="#logoutModal"
+                  >
+                    <i
+                      class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"
+                    ></i>
+                    Logout
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <!-- End of Topbar -->
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
+            <!-- Page Heading -->
+            <div
+              class="d-sm-flex align-items-center justify-content-between mb-4"
+            >
+              <h1 class="h3 mb-0 text-gray-800">Pengaturan Billing</h1>
+            </div>
+
+            <!-- Content Row -->
+            <div class="row">
+              <div class="col-xl-12 col-lg-12">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                  >
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Data Billing
+                    </h6>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="mb-4">
+                      <a
+                        href="#"
+                        class="btn btn-primary btn-sm"
+                        data-toggle="modal"
+                        data-target="#formVariabelModal"
+                        data-backdrop="static"
+                        data-keyboard="false"
+                        ><i class="fas fa-plus-square"></i> Input Data Billing</a
+                      >
+                    </div>
+                    <div class="mb-3 border rounded p-2">
+                      <p>Cari Data Billing</p>
+                      <form class="form-inline">
+                        <div class="form-group">
+                          <select id="jenisVariabel" class="form-control">
+                            <option>Jenis billing..</option>
+                            <option>Insidentil</option>
+                            <option>Bulanan</option>
+                            <option>Angsuran</option>
+                          </select>
+                        </div>
+                        <div class="form-group ml-3">
+                          <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-search"></i>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <p class="mb-2">
+                      Jumlah data : <span class="font-weight-bold">3</span>
+                    </p>
+                    <table class="table table-striped">
+                      <tr>
+                        <th>No.</th>
+                        <th>Nama Billing</th>
+                        <th>Jenis Billing</th>
+                        <th>Aksi</th>
+                      </tr>
+                      <tr>
+                        <td>1.</td>
+                        <td>Uang LKS</td>
+                        <td class="font-weight-bold text-primary">Insidentil</td>
+                        <td>
+                          <a href="#" class="ml-2" data-toggle="modal" data-target="#formUbahBillingModal" data-backdrop="static" data-keyboard="false"
+                            ><i class="fas fa-cog"></i> Ubah</a
+                          >
+                          <a href="#" class="ml-2" data-toggle="modal" data-target="#formHapusBillingModal" data-backdrop="static" data-keyboard="false"
+                            ><i class="fas fa-trash"></i> Hapus</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2.</td>
+                        <td>Uang Ujian UTS</td>
+                        <td class="font-weight-bold text-primary">Insidentil</td>
+                        <td>
+                          <a href="#" class="ml-2"
+                            ><i class="fas fa-cog"></i> Ubah</a
+                          >
+                          <a href="#" class="ml-2"
+                            ><i class="fas fa-trash"></i> Hapus</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>3.</td>
+                        <td>Uang Ujian UAS</td>
+                        <td class="font-weight-bold text-primary">Insidentil</td>
+                        <td>
+                          <a href="#" class="ml-2"
+                            ><i class="fas fa-cog"></i> Ubah</a
+                          >
+                          <a href="#" class="ml-2"
+                            ><i class="fas fa-trash"></i> Hapus</a
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xl-12 col-lg-12">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                  >
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Pemetaan Billing Siswa
+                    </h6>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="mb-4">
+                      <a
+                        href="#"
+                        class="btn btn-primary btn-sm"
+                        data-toggle="modal"
+                        data-target="#formPemetaanBillingModal"
+                        data-backdrop="static"
+                        data-keyboard="false"
+                        ><i class="fas fa-plus-square"></i> Input Pemetaan Billing</a
+                      >
+                    </div>
+                    <div class="mb-3 border rounded p-2">
+                      <p>Cari Data Pemetaan Billing</p>
+                      <form class="form-inline">
+                        <div class="form-group">
+                          <select class="form-control">
+                            <option>Pilih billing..</option>
+                            <option>Uang Ujian UTS</option>
+                            <option>Uang Ujian UAS</option>
+                            <option>Uang LKS</option>
+                          </select>
+                        </div>
+                        <div class="form-group ml-3">
+                          <select id="kelas" class="form-control ml-1">
+                            <option>Kelas..</option>
+                            <option>1-A</option>
+                            <option>1-B</option>
+                            <option>1-C</option>
+                            <option>1-D</option>
+                            <option>1-E</option>
+                            <option>1-F</option>
+                          </select>
+                        </div>
+                        <div class="form-group ml-3">
+                          <input type="text" id="nipSiswa" placeholder="NIP Siswa.." class="form-control ml-1">
+                        </div>
+                        <div class="form-group ml-3">
+                          <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-search"></i>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <p class="mb-2">
+                      Jumlah data : <span class="font-weight-bold">10</span>
+                    </p>
+                    <table class="table table-striped">
+                      <tr>
+                        <th>No.</th>
+                        <th>NIP Siswa</th>
+                        <th>Nama</th>
+                        <th>Kelas</th>
+                        <th>Billing</th>
+                        <th>Jenis Billing</th>
+                        <th>Besar Billing</th>
+                        <th>Angsuran</th>
+                      </tr>
+                      <tr>
+                        <td>1.</td>
+                        <td>23929</td>
+                        <td>Harahhman</td>
+                        <td>1-A</td>
+                        <td>Uang Ujian LKS</td>
+                        <td>Insidentil</td>
+                        <td>Rp. 125.000,00</td>
+                        <td> - </td>
+                      </tr>
+                      <tr>
+                        <td>2.</td>
+                        <td>23929</td>
+                        <td>Harahhman</td>
+                        <td>1-A</td>
+                        <td>Uang Ujian LKS</td>
+                        <td>Insidentil</td>
+                        <td>Rp. 125.000,00</td>
+                        <td> - </td>
+                      </tr>
+                      <tr>
+                        <td>3.</td>
+                        <td>23929</td>
+                        <td>Harahhman</td>
+                        <td>1-A</td>
+                        <td>Uang Ujian LKS</td>
+                        <td>Insidentil</td>
+                        <td>Rp. 125.000,00</td>
+                        <td> - </td>
+                      </tr>
+                      <tr>
+                        <td>4.</td>
+                        <td>23929</td>
+                        <td>Harahhman</td>
+                        <td>1-A</td>
+                        <td>Uang Ujian LKS</td>
+                        <td>Insidentil</td>
+                        <td>Rp. 125.000,00</td>
+                        <td> - </td>
+                      </tr>
+                      <tr>
+                        <td>5.</td>
+                        <td>23929</td>
+                        <td>Harahhman</td>
+                        <td>1-A</td>
+                        <td>Uang Ujian LKS</td>
+                        <td>Insidentil</td>
+                        <td>Rp. 125.000,00</td>
+                        <td> - </td>
+                      </tr>
+                      <tr>
+                        <td>6.</td>
+                        <td>23929</td>
+                        <td>Harahhman</td>
+                        <td>1-A</td>
+                        <td>Uang Ujian LKS</td>
+                        <td>Insidentil</td>
+                        <td>Rp. 125.000,00</td>
+                        <td> - </td>
+                      </tr>
+                      <tr>
+                        <td>7.</td>
+                        <td>23929</td>
+                        <td>Harahhman</td>
+                        <td>1-A</td>
+                        <td>Uang Ujian LKS</td>
+                        <td>Insidentil</td>
+                        <td>Rp. 125.000,00</td>
+                        <td> - </td>
+                      </tr>
+                      <tr>
+                        <td>8.</td>
+                        <td>23929</td>
+                        <td>Harahhman</td>
+                        <td>1-A</td>
+                        <td>Uang Ujian LKS</td>
+                        <td>Insidentil</td>
+                        <td>Rp. 125.000,00</td>
+                        <td> - </td>
+                      </tr>
+                      <tr>
+                        <td>9.</td>
+                        <td>23929</td>
+                        <td>Harahhman</td>
+                        <td>1-A</td>
+                        <td>Uang Ujian LKS</td>
+                        <td>Insidentil</td>
+                        <td>Rp. 125.000,00</td>
+                        <td> - </td>
+                      </tr>
+                      <tr>
+                        <td>10.</td>
+                        <td>23929</td>
+                        <td>Harahhman</td>
+                        <td>1-A</td>
+                        <td>Uang Ujian LKS</td>
+                        <td>Insidentil</td>
+                        <td>Rp. 125.000,00</td>
+                        <td> - </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright &copy; Your Website 2020</span>
+            </div>
+          </div>
+        </footer>
+        <!-- End of Footer -->
+      </div>
+      <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select "Logout" below if you are ready to end your current session.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <a class="btn btn-primary" href="../index.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form Input Variabel Modal-->
+    <div
+      class="modal fade"
+      id="formVariabelModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalFormInputVariabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Input Data Billing</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <form>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="fieldJenisVariabel">Jenis Billing</label>
+                <select id="fieldJenisVariabel" class="form-control">
+                  <option>Insidentil</option>
+                  <option>Bulanan</option>
+                  <option>Angsuran</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                <label for="fieldNamaVariabel">Nama Billing</label>
+                <input type="text" id="fieldNamaVariabel" class="form-control">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-secondary"
+                type="button"
+                data-dismiss="modal"
+              >
+                Batal Input
+              </button>
+              <button type="submit" class="btn btn-primary">Tambah Billing</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form Ubah Data Billing Modal-->
+    <div
+      class="modal fade"
+      id="formUbahBillingModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalFormInputVariabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ubah Data Billing</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <form>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="fieldJenisVariabel">Jenis Billing</label>
+                <select id="fieldJenisVariabel" class="form-control">
+                  <option>Insidentil</option>
+                  <option>Bulanan</option>
+                  <option>Angsuran</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                <label for="fieldNamaVariabel">Nama Billing</label>
+                <input type="text" id="fieldNamaVariabel" class="form-control">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-secondary"
+                type="button"
+                data-dismiss="modal"
+              >
+                Batal Ubah
+              </button>
+              <button type="submit" class="btn btn-primary">Ubah Data</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form Hapus Data Billing Modal-->
+    <div
+      class="modal fade"
+      id="formHapusBillingModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalFormInputVariabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ubah Data Billing</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <form>
+            <div class="modal-body">
+              <p>Tekan tombol Hapus untuk melanjutkan</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-secondary"
+                type="button"
+                data-dismiss="modal"
+              >
+                Batal
+              </button>
+              <button type="submit" class="btn btn-danger">Hapus</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form Pemetaan Billing Modal-->
+    <div
+      class="modal fade"
+      id="formPemetaanBillingModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalFormInputVariabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Form Pemetaan Billing</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <form>
+            <div class="modal-body">
+              <div class="mb-3 p-2 border rounded">
+                <p class="mb-2">Proses Billing</p>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option>Pilih Jenis Billing..</option>
+                    <option>Insidentil</option>
+                    <option>Bulanan</option>
+                    <option>Angsuran</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option>Pilih Billing..</option>
+                    <option>Uang Ujian UTS</option>
+                    <option>Uang Ujian UAS</option>
+                    <option>Uang LKS</option>
+                    <option>SPP</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="inlineBesarBilling">Besar Billing</label>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">Rp</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineBesarBilling" placeholder="0,00">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Jumlah Angsuran</label>
+                  <input type="number" class="form-control">
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="form-group">
+                  <select class="form-control">
+                    <option>Pilih Kelas..</option>
+                    <option>1-A</option>
+                    <option>1-B</option>
+                    <option>1-C</option>
+                    <option>1-D</option>
+                    <option>1-E</option>
+                  </select>
+                </div>
+                <div class="form-group ml-2">
+                  <input type="text" class="form-control" placeholder="NIP Siswa...">
+                </div>
+                <div class="form-group ml-2">
+                  <button type="button" class="btn btn-primary">Cari</button>
+                </div>
+              </div>
+              <div
+                          class="d-block mb-3"
+                          style="
+                            height: 300px;
+                            overflow-y: scroll;
+                            border: 1px solid grey;
+                            border-radius: 5px;
+                          "
+                        >
+                <table class="table table-striped">
+                  <tr>
+                    <th><input type="checkbox" /></th>
+                    <th>NIP</th>
+                    <th>Nama Siswa</th>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>23927</td>
+                    <td>Harahman</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>920392</td>
+                    <td>Sonya</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>823492</td>
+                    <td>Ratrika</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>23728</td>
+                    <td>Atikah</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>04393</td>
+                    <td>Saraswati</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>349384</td>
+                    <td>Sudirman</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>349384</td>
+                    <td>Agung</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>9382</td>
+                    <td>Asaba</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>349389</td>
+                    <td>Noval</td>
+                  </tr>
+                </table>
+                      </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-secondary"
+                type="button"
+                data-dismiss="modal"
+              >
+                Batal
+              </button>
+              <button type="submit" class="btn btn-primary">Proses</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="../vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="../js/demo/chart-area-demo.js"></script>
+    <script src="../js/demo/chart-pie-demo.js"></script>
+  </body>
+</html>
