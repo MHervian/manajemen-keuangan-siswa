@@ -32,138 +32,6 @@
   <body id="page-top">
     <!-- Page Wrapper -->
     <div id="wrapper">
-      <!-- Sidebar -->
-      <ul
-        class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
-        id="accordionSidebar"
-      >
-        <!-- Sidebar - Brand -->
-        <a
-          class="sidebar-brand d-flex align-items-center justify-content-center"
-          href="../program.html"
-        >
-          <div class="sidebar-brand-text mx-3">
-            Admin Sistem
-            <span style="display: block; font-size: 10px; opacity: 0.55;"
-              >Keuangan Siswa</span
-            >
-          </div>
-        </a>
-
-        <!-- Divider -->
-        <hr class="sidebar-divider my-0" />
-
-        <!-- Nav Item - Dashboard -->
-        <li class="nav-item active">
-          <a class="nav-link" href="../program.html">
-            <i class="fas fa-home"></i>
-            <span>Homepage</span></a
-          >
-        </li>
-
-        <hr class="sidebar-divider" />
-
-        <li class="nav-item active">
-          <a class="nav-link" href="dashboard.html">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span></a
-          >
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="pengaturan.html">
-            <i class="fas fa-graduation-cap"></i>
-            <span>Pengaturan Profil dan Akademik</span></a
-          >
-        </li>
-
-        <!-- Divider -->
-        <hr class="sidebar-divider" />
-
-        <!-- Manajemen SPP area -->
-        <div class="sidebar-heading">
-          Manajemen SD
-        </div>
-        <li class="nav-item">
-          <a class="nav-link" href="tunggakan.html">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Laporan Tunggakan</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="penerimaan.html">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Laporan Penerimaan</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pengaturan_billing.html">
-            <i class="fas fa-coins"></i>
-            <span>Pengaturan Billing</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="siswa.html">
-            <i class="fas fa-cog"></i>
-            <span>Data Siswa</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="mutasi.html">
-            <i class="fas fa-cog"></i>
-            <span>Mutasi Kelas</span>
-          </a>
-        </li>
-
-        <!-- Divider -->
-        <hr class="sidebar-divider" />
-
-        <!-- Manajemen Siswa Area -->
-        <div class="sidebar-heading">
-          Manajemen SMP
-        </div>
-
-        <!-- Nav Item - Pages Collapse Menu -->
-        <li class="nav-item">
-          <a class="nav-link" href="tunggakan.html">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Laporan Tunggakan</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="penerimaan.html">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Laporan Penerimaan</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pengaturan_billing.html">
-            <i class="fas fa-coins"></i>
-            <span>Pengaturan Billing</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="siswa.html">
-            <i class="fas fa-cog"></i>
-            <span>Data Siswa</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="mutasi.html">
-            <i class="fas fa-cog"></i>
-            <span>Mutasi Kelas</span>
-          </a>
-        </li>
-
-        <!-- Divider -->
-        <hr class="sidebar-divider d-none d-md-block" />
-
-        <!-- Sidebar Toggler (Sidebar) -->
-        <div class="text-center d-none d-md-inline">
-          <button class="rounded-circle border-0" id="sidebarToggle"></button>
-        </div>
-      </ul>
-      <!-- End of Sidebar -->
-
       <!-- Content Wrapper -->
       <div id="content-wrapper" class="d-flex flex-column">
         <!-- Main Content -->
@@ -184,8 +52,8 @@
             <div
               class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"
             >
-              <a href="transaksi.html" class="btn btn-primary btn-lg"
-                ><i class="fas fa-money-check-alt"></i> Transaksi Billing</a
+              <a href="dashboard.html" class="btn btn-primary"
+                ><i class="fas fa-arrow-circle-left"></i> Ke Dashboard</a
               >
             </div>
 
@@ -240,7 +108,7 @@
             <div
               class="d-sm-flex align-items-center justify-content-between mb-4"
             >
-              <h1 class="h3 mb-0 text-gray-800">Pembayaran</h1>
+              <h1 class="h3 mb-0 text-gray-800">Pembayaran Billing Siswa</h1>
             </div>
 
             <!-- Content Row -->
@@ -249,34 +117,21 @@
                 <div class="card shadow mb-4">
                   <div class="card-header py-3 d-flex align-items-center">
                     <h6 class="m-0 font-weight-bold text-primary">
-                      Pencarian Pembayaran Siswa
+                      Form Pembayaran
                     </h6>
                   </div>
                   <!-- Card Body -->
                   <div class="card-body">
-                    <div class="mb-3 border rounded p-2">
+                    <div class="mb-4 border rounded p-2">
                       <p>Cari data siswa untuk melakukan pembayaran</p>
                       <form class="form-inline">
                         <div class="form-group">
-                          <label for="namaSiswa">NIP Siswa</label>
                           <input
                             type="text"
                             id="namaSiswa"
                             class="form-control ml-2"
+                            placeholder="NIP Siswa.."
                           />
-                        </div>
-                        <div class="form-group ml-3">
-                          <label for="kelas">Kelas</label>
-                          <select id="kelas" class="form-control ml-2">
-                            <option>-</option>
-                            <option>1A</option>
-                            <option>1B</option>
-                            <option>1C</option>
-                            <option>1D</option>
-                            <option>1E</option>
-                            <option>1F</option>
-                            <option>1G</option>
-                          </select>
                         </div>
                         <div class="form-group ml-3">
                           <button type="submit" class="btn btn-primary">
@@ -285,53 +140,182 @@
                         </div>
                       </form>
                     </div>
-                    <table class="table table-striped">
-                      <tr>
-                        <th>No.</th>
-                        <th>NIP</th>
-                        <th>Nama Siswa</th>
-                        <th>Tunggakan</th>
-                        <th>Aksi</th>
-                      </tr>
-                      <tr>
-                        <td>1.</td>
-                        <td>292382</td>
-                        <td>Harrahman</td>
-                        <td>
-                          <ul>
-                            <li>SPP</li>
-                            <li>Uang LKS</li>
-                            <li>Uang Gedung</li>
-                          </ul>
-                        </td>
-                        <td>
-                          <a
-                            href="proses_billing.html"
-                            class="btn btn-primary btn-sm"
-                            >Proses Transaksi</a
+                    <form>
+                      <div class="row">
+                        <div class="col-xl-6 col-lg-6">
+                          <table class="table border">
+                            <tr>
+                              <td>NIP Siswa</td>
+                              <td>:</td>
+                              <td>923934</td>
+                            </tr>
+                            <tr>
+                              <td>Nama Siswa</td>
+                              <td>:</td>
+                              <td>Harrahman</td>
+                            </tr>
+                            <tr>
+                              <td>Kelas</td>
+                              <td>:</td>
+                              <td>1-A</td>
+                            </tr>
+                            <tr>
+                              <td>Tunggakan</td>
+                              <td>:</td>
+                              <td>
+                                <ul class="pl-3">
+                                  <li>
+                                    Uang Ujian UAS (<span
+                                      class="font-weight-bold"
+                                      >Rp. 125.000,00</span
+                                    >)
+                                  </li>
+                                  <li>
+                                    Uang Ujian UTS (<span
+                                      class="font-weight-bold"
+                                      >Rp. 125.000,00</span
+                                    >)
+                                  </li>
+                                  <li>
+                                    Uang Gedung (<span class="font-weight-bold"
+                                      >Rp. 325.000,00</span
+                                    >)
+                                  </li>
+                                  <li>
+                                    SPP (<span class="font-weight-bold"
+                                      >Rp. 125.000,00</span
+                                    >)
+                                  </li>
+                                  <li>
+                                    Angsuran (<span class="font-weight-bold"
+                                      >Rp. 925.000,00</span
+                                    >)
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                          <p>Masukkan billing yang akan dibayar</p>
+                          <div class="form-group">
+                            <select class="form-control">
+                              <option>Pilih Billing..</option>
+                              <option>Uang Ujian UAS</option>
+                              <option>Uang Ujian UTS</option>
+                              <option>Uang Gedung</option>
+                              <option>SPP</option>
+                            </select>
+                          </div>
+                          <div class="d-flex" id="pilihanAngsuran">
+                            <div class="form-group">
+                              <label>Besar Angsuran</label>
+                              <input type="text" class="form-control" />
+                            </div>
+                            <div class="form-group ml-2">
+                              <label>Angsuran ke-</label>
+                              <input type="number" class="form-control" />
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <button type="button" class="btn btn-primary">
+                              <i class="fas fa-plus-square"></i> Tambah ke List
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <h4>List Pembayaran</h4>
+                      <table class="table table-striped border w-75">
+                        <tr>
+                          <th>No.</th>
+                          <th>Billing</th>
+                          <th>Besar Pembayaran</th>
+                          <th>Angsuran ke-</th>
+                          <th></th>
+                        </tr>
+                        <tr>
+                          <td>1.</td>
+                          <td>Uang Ujian UTS</td>
+                          <td>Rp. 125.000,00</td>
+                          <td>-</td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-sm btn-danger border-danger text-white"
+                            >
+                              <i class="fas fa-times"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2.</td>
+                          <td>Uang Ujian UAS</td>
+                          <td>Rp. 125.000,00</td>
+                          <td>-</td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-sm btn-danger border-danger text-white"
+                            >
+                              <i class="fas fa-times"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3.</td>
+                          <td>Uang Angsuran</td>
+                          <td>
+                            Rp. 1.100.000,00
+                          </td>
+                          <td>3</td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-sm btn-danger border-danger text-white"
+                            >
+                              <i class="fas fa-times"></i>
+                            </button>
+                          </td>
+                        </tr>
+                      </table>
+                      <div class="mb-4 border w-50 p-3">
+                        <div class="form-group row">
+                          <label
+                            for="besarPembayaran"
+                            class="col-sm-4 col-form-label"
+                            >Besar Pembayaran</label
                           >
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>2.</td>
-                        <td>292382</td>
-                        <td>Rohman</td>
-                        <td>
-                          <ul>
-                            <li>SPP</li>
-                            <li>Uang LKS</li>
-                            <li>Uang Gedung</li>
-                          </ul>
-                        </td>
-                        <td>
-                          <a
-                            href="proses_billing.html"
-                            class="btn btn-primary btn-sm"
-                            >Proses Transaksi</a
+                          <div class="col-sm-8">
+                            <input
+                              type="text"
+                              id="besarPembayaran"
+                              class="form-control"
+                            />
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label
+                            for="sumberDana"
+                            class="col-form-label col-sm-4"
+                            >Sumber Dana</label
                           >
-                        </td>
-                      </tr>
-                    </table>
+                          <div class="col-sm-8">
+                            <select class="form-control">
+                              <option>Dana Bantuan Pemerintah</option>
+                              <option>Dana Siswa</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <button type="reset" class="btn btn-secondary">
+                            Ulangi Transaksi
+                          </button>
+                          <button type="submit" class="btn btn-primary">
+                            Proses Transaksi
+                          </button>
+                        </div>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
